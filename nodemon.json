@@ -1,0 +1,14 @@
+{
+  "restartable": "rs",
+  "ignore": [".git", "node_modules/**/node_modules", "*.gql"],
+  "verbose": true,
+  "execMap": {
+    "ts": "node --es-module-specifier-resolution=node --unhandled-rejections=warn --loader ts-node/esm"
+  },
+  "watch": ["src/**/*"],
+  "env": {
+    "NODE_ENV": "development",
+    "TS_NODE_PROJECT": "./tsconfig.json"
+  },
+  "ext": "*"
+}

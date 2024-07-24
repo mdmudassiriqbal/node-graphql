@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",
+      "module": "CommonJS",
+      "lib": ["dom", "es2017", "es2019"],
+      "allowJs": true,
+      "types": ["node"],
+      "baseUrl": ".",
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "sourceMap": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "strictPropertyInitialization": false,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react",
+      "typeRoots": ["node_modules/@types", "@types"],
+      "paths": {
+        "@common*": ["src/common*"],
+        "@core*": ["src/core*"],
+        "@services*": ["src/services*"],
+        "@lib*": ["src/lib*"],
+        "@src*": ["src*"]
+      }
+    },
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+      },
+    "include": ["assets", "src", "**/*.ts", "**/*.tsx", "**/*.graphql", "config"],
+    "exclude": ["node_modules", "dist", "**/*.spec.ts", ".next", "out"]
+  }
